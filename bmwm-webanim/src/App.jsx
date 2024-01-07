@@ -1,13 +1,16 @@
-import {  } from 'react'
 
+
+import { Outlet } from 'react-router-dom'
 import './App.scss'
+import Root from './routes/root'
 
 function App() {
 
 
   return (
     <>
-   hello
+    <Root />
+   <Outlet />
     </>
   )
 }
