@@ -1,0 +1,39 @@
+.head {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  top: 26px;
+  left: 0;
+
+  &__boxLogo {
+    min-width: 227px;
+    width: calc(((100vw / 12) * 2) - (3 * 20px));
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0px 60px 60px 0px;
+    background: linear-gradient(
+      91deg,
+      #0565af 0.92%,
+      #063f7b 29.95%,
+      #f60400 98.03%
+    );
+    padding: 4px 26px 4px 14px;
+    margin: 0 calc(((100vw / 12) * 5) - (4 * 20px)) 0 0;
+  }
+  &__logoTxt {
+    color: #fff;
+    font-family: "afterZero";
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 90%; /* 25.2px */
+    margin: 0 10px 0 0;
+  }
+  &__nav {
+    width: calc(((100vw / 12) * 5) - (4 * 20px));
+  }
+}
