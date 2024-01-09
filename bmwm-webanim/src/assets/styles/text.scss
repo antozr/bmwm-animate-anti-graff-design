@@ -1,0 +1,23 @@
+.sect {
+  &__title {
+    color: #fff;
+    text-align: right;
+    font-family: "afterZero";
+    //font-size: 91px;
+    font-size: 6.31vw;
+    font-weight: 400;
+    line-height: 90%; /* 81.9px */
+
+    &--decorPrincipale{
+        width: auto;
+        text-align: end;
+        transform: translateY(24vh) translateX(-49vw);
+    }
+    &--decorHB {
+        width: auto;
+      font-size: 6vw;
+      flex-shrink: 0;
+      transform: rotate(-15.861deg) translateY(46vh) translateX(-9vw);
+    }
+  }
+}
