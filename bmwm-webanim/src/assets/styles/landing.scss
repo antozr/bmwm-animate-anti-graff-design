@@ -1,45 +1,122 @@
+.sect {
+  width: 100%;
+  height: 100vh;
+  background-color: red;
 
-
-.sect{
-    width: 100%;
+  &--1 {
+    background-color: blue;
+    font-size: 160px;
+    border-radius: 0px 0px 170px 170px;
+    background: url(../../../public/assets/img/bmwSite/bmw-fond2.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: start;
+  }
+  &--2 {
     height: 100vh;
-    background-color: red;
+    width: 100%;
+    background-color: #ece6e0;
+  }
 
-    &--1{
-        background-color: blue;
-        font-size: 160px;
-        border-radius: 0px 0px 170px 170px;
-        background: url(../../../public/assets/img/bmwSite/bmw-fond2.webp);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        text-align: start;
+  /// style for the 3 images in second section
+  &__blocImg {
+    display: flex;
+    flex-direction: row;
+    height: 80vh;
+    width: 100%;
+    display:flex;
+    align-items: baseline;
+
+    
+  }
+}
+
+
+.blocImg{
+    width: 33%;
+    height: 100%;
+    overflow: hidden;
+
+    &>img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+
+    }
+    &:nth-child(2){
+        transform: skewX(-20deg);
+        background-color: #063f7b;
+        &>img{
+            transform: skewX(20deg);
+            width: 150%;
+            image-rendering: pixelated;
+
+        }
+    }
+    &:nth-child(1){
+        background-color: red;
+        height: 400px;
+        clip-path: polygon(0 25%, 100% 7%, 91% 82%, 0% 100%);
+        transform: translateY(60px);
+    }
+    &:nth-child(3){
+        background-color: red;
+        height: 420px;
+        // clip-path: polygon(32% 0%, 100% 0%, 100% 100%, 0% 100%);
+        transform: translateY(1px)  skewX(-20deg);
+    }
+
+    &__svgF{
+        fill: url(assets/img/bmwSite/bmw-02-old-1.webp);
+
+        &--2{
+            border: 2px solid red;
+            background: transparent;
+            overflow: hidden;
+        }
     }
 }
 
 
-.interSection{
-    &__bmwBandeG{
-        width: 100%;
-        height: 45vh;
-        display: flex;
-        flex-direction: row;
-        padding: 0 13vw;
-        transform: translateY(-20vh);
-    }
+.interSection {
+  &__bmwBandeG {
+    width: 100%;
+    height: 45vh;
+    max-height: 460px;
+    display: flex;
+    flex-direction: row;
+    padding: 0 13vw;
+    transform: translateY(-20vh);
+  }
 
-    &__bande{
-        width: 33%;
-        height: 100%;
-        transform: skewX(-21deg);
-        &--bc{
-            background: linear-gradient(197deg, rgba(5, 101, 175, 0.00) 15.81%, #0565AF 44.02%, #0565AF 100%);
-        }
-        &--bf{
-            background: linear-gradient(180deg, rgba(6, 63, 123, 0.00) 0%, #063F7B 61.46%, #063F7B 100%);
-        }
-        &--rg{
-            background: linear-gradient(180deg, rgba(246, 4, 0, 0.00) 0%, #F60400 67.19%, #F60400 100%);
-        }
+  &__bande {
+    width: 33%;
+    height: 100%;
+    transform: skewX(-21deg);
+    &--bc {
+      background: linear-gradient(
+        197deg,
+        rgba(5, 101, 175, 0) 15.81%,
+        #0565af 44.02%,
+        #0565af 100%
+      );
     }
+    &--bf {
+      background: linear-gradient(
+        180deg,
+        rgba(6, 63, 123, 0) 0%,
+        #063f7b 61.46%,
+        #063f7b 100%
+      );
+    }
+    &--rg {
+      background: linear-gradient(
+        180deg,
+        rgba(246, 4, 0, 0) 0%,
+        #f60400 67.19%,
+        #f60400 100%
+      );
+    }
+  }
 }

@@ -8,16 +8,27 @@
     font-weight: 400;
     line-height: 90%; /* 81.9px */
 
-    &--decorPrincipale{
-        width: auto;
-        text-align: end;
-        transform: translateY(24vh) translateX(-49vw);
+    &--decorPrincipale {
+      width: auto;
+      text-align: end;
+      transform: translateY(24vh) translateX(-49vw);
     }
     &--decorHB {
-        width: auto;
+      width: auto;
       font-size: 6vw;
       flex-shrink: 0;
       transform: rotate(-15.861deg) translateY(46vh) translateX(-9vw);
+    }
+    &--blue {
+      color: #063f7b;
+    }
+    &--red{
+        color:#F60400;
+    }
+    &--decorCentrale {
+      font-size: 120px;
+      line-height: 160%; /* 192px */
+      letter-spacing: 10.8px;
     }
   }
 }
