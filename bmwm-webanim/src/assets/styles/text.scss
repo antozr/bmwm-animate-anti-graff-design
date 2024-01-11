@@ -36,5 +36,31 @@
       width: 100%;
       text-align: center;
     }
+    &--2{
+      font-size: 6vw;
+      text-align: start;
+      max-width: 7ch;
+    }
+    &--black{
+      color: #000000;
+    }
+  }
+
+
+  &__txt{
+    color: #000000;
+    font-family: "robotoCondensed";
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 33.6px */
+
+    &--after{
+      font-family: "afterZero";
+    }
+
+    &--white{
+      color:#ffffff
+    }
   }
 }

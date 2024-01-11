@@ -1,0 +1,63 @@
+.sect {
+  &__rowContent {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    &--padLeft {
+      padding: 0 0 0 13vw;
+    }
+  }
+}
+
+.rowContent {
+  &__left {
+    width: calc(((100vw / 12) * 4) - (4 * 20px));
+    margin: 0 20px 0 0;
+    min-width: 30ch;
+  }
+
+  &__boxContImg {
+    width: calc(((100vw / 12) * 6) - (4 * 20px));
+   //width: 100vw;
+   min-width: 600px;
+    height: 45vh;
+    min-height: 600px;
+    // clip-path: polygon(3% 3%, 100% 0, 75% 100%, 9% 69%);
+    clip-path: polygon(0% 13%, 100% 0, 70% 100%, 19% 80%);
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px;
+    transform: rotate(5deg);
+    
+  }
+&__right{
+    width: calc(100% - (((100vw / 12) * 4) - (4 * 20px)));
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: end;
+    transform: translateX(3vw);
+
+    &>h2{
+        position: absolute;
+        z-index: 5;
+        transform: translateX(-15vw);
+        padding: 10vh 0 0 0;
+    }
+}
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  &__txtDecor{
+    position: absolute;
+    bottom: 20px;
+    right: 20%;
+    z-index: 5;
+    font-size: 3vw;
+
+    transform: rotate(-15deg) translateX(-25%) translateY(-60px);
+  }
+}
