@@ -17,67 +17,107 @@
     height: 100vh;
     width: 100%;
     background-color: #ece6e0;
+    padding: 20vh 0 0 0 ;
   }
 
-  /// style for the 3 images in second section
+  /// style for the 2 images in second section
   &__blocImg {
     display: flex;
     flex-direction: row;
     height: 80vh;
     width: 100%;
-    display:flex;
+    display: flex;
     align-items: baseline;
+    background-color: #0565af;
 
+    &--smallH {
+      height: 400px;
+      //margin: calc(80vh - 400px) 0 0 0;
+    }
+    &--center {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      transform: translateY(-80vh);
+      transition: 0.8s ease-out;
+      height: 100vh;
+      & > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &--centerSmall {
+      width: 38%;
+      transition: 0.6s;
+      transform: translateY(-100vh) translateX(66%) skewX(-20deg);
+      overflow: hidden;
+      & > img {
+        transform: skewX(20deg) translateX(-64px) translateY(-15%);
+        width: auto;
+        height: auto;
+        scale: 0.8;
+        filter: saturate(0%);
+      }
+    }
+  }
+
+  /// bloc texte
+  &__blocText {
+    width: 100%;
+    color: red;
+    & > p {
+      &:nth-child(1) {
+        text-align: start;
+        transform: translateX(25%) translateY(-10px);
+        width: auto;
+      }
+      &:nth-child(3) {
+        text-align: end;
+        transform: translateX(-10%);
+        font-size: 8vw;
+        width: auto;
+      }
+    }
     
   }
 }
 
+.blocImg {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
 
-.blocImg{
-    width: 33%;
+  & > img {
+    object-fit: cover;
+    width: 100%;
     height: 100%;
-    overflow: hidden;
+  }
+  // &:nth-child(2){
+  //     transform: skewX(-20deg);
+  //     background-color: #063f7b;
+  //     &>img{
+  //         transform: skewX(20deg);
+  //         width: 150%;
+  //         image-rendering: pixelated;
 
-    &>img{
-        object-fit: cover;
-        width: 100%;
-        height: 100%;
-
-    }
-    &:nth-child(2){
-        transform: skewX(-20deg);
-        background-color: #063f7b;
-        &>img{
-            transform: skewX(20deg);
-            width: 150%;
-            image-rendering: pixelated;
-
-        }
-    }
-    &:nth-child(1){
-        background-color: red;
-        height: 400px;
-        clip-path: polygon(0 25%, 100% 7%, 91% 82%, 0% 100%);
-        transform: translateY(60px);
-    }
-    &:nth-child(3){
-        background-color: red;
-        height: 420px;
-        // clip-path: polygon(32% 0%, 100% 0%, 100% 100%, 0% 100%);
-        transform: translateY(1px)  skewX(-20deg);
-    }
-
-    &__svgF{
-        fill: url(assets/img/bmwSite/bmw-02-old-1.webp);
-
-        &--2{
-            border: 2px solid red;
-            background: transparent;
-            overflow: hidden;
-        }
-    }
+  //     }
+  // }
+  // &:nth-child(1){
+  //     background-color: red;
+  //     height: 400px;
+  //     clip-path: polygon(0 25%, 100% 7%, 91% 82%, 0% 100%);
+  //     transform: translateY(60px);
+  // }
+  // &:nth-child(2){
+  //     background-color: red;
+  //     height: 420px;
+  //     // clip-path: polygon(32% 0%, 100% 0%, 100% 100%, 0% 100%);
+  //     transform: translateY(1px)  skewX(-20deg);
+  // }
 }
-
 
 .interSection {
   &__bmwBandeG {

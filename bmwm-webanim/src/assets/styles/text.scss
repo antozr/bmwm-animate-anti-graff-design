@@ -25,10 +25,16 @@
     &--red{
         color:#F60400;
     }
+    &--zSup{
+      position: relative;
+      z-index: 2;
+    }
     &--decorCentrale {
-      font-size: 120px;
+      font-size: 8vw;
       line-height: 160%; /* 192px */
       letter-spacing: 10.8px;
+      width: 100%;
+      text-align: center;
     }
   }
 }
