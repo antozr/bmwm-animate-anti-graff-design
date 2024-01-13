@@ -62,5 +62,12 @@
     &--white{
       color:#ffffff
     }
+    &--imgDecorTop{
+      position: absolute;
+      top: 60px;
+      right: -40px;
+      font-size: 6.5vw;
+      z-index: 4;
+    }
   }
 }

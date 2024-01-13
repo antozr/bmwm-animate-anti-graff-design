@@ -7,6 +7,11 @@
     &--padLeft {
       padding: 0 0 0 13vw;
     }
+    &--spaceBtw{
+      justify-content: space-between;
+      margin: 0 0 0 -5vw;
+      width: calc(100% + 5vw);
+    }
   }
 }
 
@@ -16,22 +21,52 @@
     margin: 0 20px 0 0;
     min-width: 30ch;
   }
+  &__txtP {
+    width: calc(((100vw / 12) * 4) - (4 * 20px));
+    margin: 0 20px 0 0;
+    min-width: 30ch;
+    &--marginleftNeg{
 
+      margin: 0 20px 0 -5%;
+    }
+  }
+  &__imgClipPath {
+    clip-path: polygon(0% 13%, 100% 0, 70% 100%, 19% 80%);
+    width: calc(((100vw / 12) * 6) - (4 * 20px));
+    //width: 100vw;
+    min-width: 600px;
+    height: 45vh;
+    min-height: 600px;
+
+    &--3100{
+      clip-path: polygon(0% 0%, 100% 0, 100% 100%, 29% 100%);
+
+     
+
+    }
+    &--noRotate{
+      transform: rotate(-5deg);
+    }
+  }
   &__boxContImg {
     width: calc(((100vw / 12) * 6) - (4 * 20px));
-   //width: 100vw;
-   min-width: 600px;
+    //width: 100vw;
+    min-width: 600px;
     height: 45vh;
     min-height: 600px;
     // clip-path: polygon(3% 3%, 100% 0, 75% 100%, 9% 69%);
-    clip-path: polygon(0% 13%, 100% 0, 70% 100%, 19% 80%);
+    //clip-path: polygon(0% 13%, 100% 0, 70% 100%, 19% 80%);
     overflow: hidden;
     position: relative;
     border-radius: 20px;
     transform: rotate(5deg);
-    
+
+    &--small {
+      width: calc(((100vw / 12) * 5) - (4 * 20px));
+      overflow: visible;
+    }
   }
-&__right{
+  &__right {
     width: calc(100% - (((100vw / 12) * 4) - (4 * 20px)));
     display: flex;
     flex-direction: row;
@@ -39,19 +74,19 @@
     justify-content: end;
     transform: translateX(3vw);
 
-    &>h2{
-        position: absolute;
-        z-index: 5;
-        transform: translateX(-15vw);
-        padding: 10vh 0 0 0;
+    & > h2 {
+      position: absolute;
+      z-index: 5;
+      transform: translateX(-15vw);
+      padding: 10vh 0 0 0;
     }
-}
+  }
   &__img {
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
-  &__txtDecor{
+  &__txtDecor {
     position: absolute;
     bottom: 20px;
     right: 20%;
@@ -59,5 +94,18 @@
     font-size: 3vw;
 
     transform: rotate(-15deg) translateX(-25%) translateY(-60px);
+
+    &--3100{
+      transform: rotate(-15deg) translateX(95%) translateY(10px);
+    }
+  }
+
+  &__decorTxt {
+    width: 2.2ch;
+    text-align: center;
+    font-size: 6vw;
+    line-height: 101%; /* 91.91px */
+    letter-spacing: -10.01px;
+    word-wrap: break-word;
   }
 }
