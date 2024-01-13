@@ -4,7 +4,7 @@ import RowContentCar from "./RowContentCar";
 const SectionFirstBmw = () => {
   return (
     <>
-      <section id="firstbmw" className="sect sect--3">
+      <section id="first" className="sect sect--3">
         <div className="sect__rowContent sect__rowContent--padLeft">
           <div className="rowContent__left rowContent__txtP">
             <p className="sect__txt">
@@ -36,39 +36,6 @@ const SectionFirstBmw = () => {
             </div>
           </div>
         </div>
-        <div className="sect__rowContent sect__rowContent--spaceBtw ">
-          <div className="rowContent__boxContImg rowContent__boxContImg--small">
-            <div className="rowContent__imgClipPath rowContent__imgClipPath--noRotate rowContent__imgClipPath--3100">
-              <img
-                src="https://images.unsplash.com/photo-1627812540252-11717e222d70?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt="Voici une BMW 328, l'une des premières voitures qu'a construit la marque."
-                className="rowContent__img"
-              />
-            </div>
-            <p className=" sect__txt sect__txt--white sect__txt--after rowContent__txtDecor rowContent__txtDecor--3100">
-              507
-            </p>
-            <p className="sect__txt sect__txt--after sect__txt--imgDecorTop">
-              M
-            </p>
-          </div>
-
-          <div className="rowContent__txtP rowContent__txtP--marginleftNeg">
-            <p className="sect__txt">
-              <i>
-                <b>La BMW Motorsport</b>
-              </i>{" "}
-              est fondé en 1972 pour propulser les sportives. Les quelques
-              employés vont donné la vie au premier monstre du{" "}
-              <i>
-                <b>M</b>
-              </i>{" "}
-              l’année suivante.
-            </p>
-          </div>
-
-          <div className="rowContent__decorTxt sect__txt--after">Münchener</div>
-        </div>
         <RowContentCar
           urlImg={
             "https://images.unsplash.com/photo-1595787383726-3d2d6ccb7ca0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -93,7 +60,31 @@ const SectionFirstBmw = () => {
           }
           txtDecorBigBool={true}
           txtDecor={"Münchener"}
-          
+          clipPath={" rowContent__imgClipPath--3100 "}
+          noRotate={" rowContent__imgClipPath--noRotate "}
+          txtDecorCss={" rowContent__txtDecor--3100 "}
+        />
+        <RowContentCar
+          urlImg={
+            "https://images.unsplash.com/photo-1651176126170-0cfc2c13c5d3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          }
+          modeleNum={"1800"}
+          txtDecorImg={"M"}
+          txtDecorImgBool={false}
+          rowDirection={false}
+          txt1={
+            <>
+              Le succès est présent dés les premières courses, en F2 de voitures
+              de tourisme. Elle ira sur un podium en 1er place jusqu’en 79. Celà
+              donnera naissance aux modèle de série, car le public est demendeur
+              de ces voitures.
+            </>
+          }
+          txtDecorBigBool={true}
+          txtDecor={"Munich"}
+          clipPath={" rowContent__imgClipPath--6point "}
+          noRotate={" rowContent__imgClipPath--noRotate "}
+          txtDecorCss={" rowContent__txtDecor--6point "}
         />
       </section>
     </>
