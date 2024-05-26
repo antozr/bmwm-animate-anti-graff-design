@@ -19,7 +19,10 @@ const Landing = () => {
       />
 
       <SectionAnimateIntro2 />
-      <SectionFirstBmw />
+      {/* <SectionFirstBmw />
+      <div className="sect sect--4 sect--bgBlack" id="first">
+        
+      </div> */}
     </>
   );
 };

@@ -1,5 +1,9 @@
 import React from "react";
 
+import { gsap } from 'gsap';
+import ScrollTrigger from 'react-scroll-trigger';
+
+
 const SectionHeoroBan = ({title1, title2}) => {
   return (
     <>

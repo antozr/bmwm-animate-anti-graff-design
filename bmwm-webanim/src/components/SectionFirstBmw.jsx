@@ -4,7 +4,7 @@ import RowContentCar from "./RowContentCar";
 const SectionFirstBmw = () => {
   return (
     <>
-      <section id="first" className="sect sect--3">
+      <section id="" className="sect sect--3">
         <div className="sect__rowContent sect__rowContent--padLeft">
           <div className="rowContent__left rowContent__txtP">
             <p className="sect__txt">
